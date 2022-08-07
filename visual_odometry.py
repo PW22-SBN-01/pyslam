@@ -116,7 +116,8 @@ class VisualOdometry(object):
             if self.des_ref is not None: 
                 self.des_ref = self.des_ref[mask_index]  
             if kVerbose:
-                print('removed ', n-self.kpn_cur.shape[0],' outliers')                
+                # print('removed ', n-self.kpn_cur.shape[0],' outliers')                
+                pass
 
     # fit essential matrix E with RANSAC such that:  p2.T * E * p1 = 0  where  E = [t21]x * R21
     # out: [Rrc, trc]   (with respect to 'ref' frame) 
@@ -165,13 +166,14 @@ class VisualOdometry(object):
         self.num_matched_kps = self.kpn_ref.shape[0] 
         self.num_inliers =  np.sum(self.mask_match)
         if kVerbose:        
-            print('# matched points: ', self.num_matched_kps, ', # inliers: ', self.num_inliers)      
+            # print('# matched points: ', self.num_matched_kps, ', # inliers: ', self.num_inliers)      
+            pass
         # t is estimated up to scale (i.e. the algorithm always returns ||trc||=1, we need a scale in order to recover a translation which is coherent with the previous estimated ones)
         absolute_scale = self.getAbsoluteScale(frame_id)
         if(absolute_scale > kAbsoluteScaleThreshold):
             # compose absolute motion [Rwa,twa] with estimated relative motion [Rab,s*tab] (s is the scale extracted from the ground truth)
             # [Rwb,twb] = [Rwa,twa]*[Rab,tab] = [Rwa*Rab|twa + Rwa*tab]
-            print('estimated t with norm |t|: ', np.linalg.norm(t), ' (just for sake of clarity)')
+            # print('estimated t with norm |t|: ', np.linalg.norm(t), ' (just for sake of clarity)')
             self.cur_t = self.cur_t + absolute_scale*self.cur_R.dot(t) 
             self.cur_R = self.cur_R.dot(R)       
         # draw image         
@@ -181,7 +183,8 @@ class VisualOdometry(object):
             self.kps_cur, self.des_cur = self.feature_tracker.detectAndCompute(self.cur_image)           
             self.kps_cur = np.array([x.pt for x in self.kps_cur], dtype=np.float32) # convert from list of keypoints to an array of points   
             if kVerbose:     
-                print('# new detected points: ', self.kps_cur.shape[0])                  
+                # print('# new detected points: ', self.kps_cur.shape[0])                  
+                pass
         self.kps_ref = self.kps_cur
         self.des_ref = self.des_cur
         self.updateHistory()           
@@ -189,8 +192,9 @@ class VisualOdometry(object):
 
     def track(self, img, frame_id):
         if kVerbose:
-            print('..................................')
-            print('frame: ', frame_id) 
+            # print('..................................')
+            # print('frame: ', frame_id) 
+            pass
         # convert image to gray if needed    
         if img.ndim>2:
             img = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)             
@@ -228,7 +232,8 @@ class VisualOdometry(object):
                     else:
                         num_outliers+=1
             if kVerbose:
-                print('# outliers: ', num_outliers)     
+                # print('# outliers: ', num_outliers)     
+                pass
         return draw_img            
 
     def updateHistory(self):

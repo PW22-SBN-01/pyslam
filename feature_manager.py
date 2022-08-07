@@ -898,7 +898,8 @@ class FeatureManager(object):
             imgDraw = cv2.drawKeypoints(frame, kps, None, color=(0,255,0), flags=0)
             cv2.imshow('detected keypoints',imgDraw)            
         if kVerbose:
-            print('detector:',self.detector_type.name,', #features:', len(kps),', [kp-filter:',filter_name,']')    
+            # print('detector:',self.detector_type.name,', #features:', len(kps),', [kp-filter:',filter_name,']')    
+            pass
         return kps        
     
     
