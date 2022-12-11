@@ -17,10 +17,10 @@
 * along with PYSLAM. If not, see <http://www.gnu.org/licenses/>.
 """
 
-from feature_manager import feature_manager_factory
-from feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
+from .feature_manager import feature_manager_factory
+from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
 
-from parameters import Parameters  
+from .parameters import Parameters  
 
 
 kNumFeatures=Parameters.kNumFeatures    

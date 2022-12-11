@@ -4,7 +4,7 @@ sys.path.append("../../")
 import cv2
 import numpy as np
 
-from utils_img import img_blocks 
+from .utils_img import img_blocks 
 
 cols = 600
 rows = 600

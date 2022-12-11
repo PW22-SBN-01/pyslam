@@ -32,7 +32,7 @@ from threading import RLock, Thread, Condition
 from queue import Queue 
 from concurrent.futures import ThreadPoolExecutor
 
-from parameters import Parameters  
+from .parameters import Parameters  
 
 #from frame import Frame, match_frames
 from keyframe import KeyFrame
@@ -41,11 +41,11 @@ from search_points import search_frame_for_triangulation, search_and_fuse
 from map_point import MapPoint
 from map import Map
 
-from timer import Timer, TimerFps
+from .timer import Timer, TimerFps
 import optimizer_g2o
 
-from utils_sys import Printer
-from utils_geom import triangulate_normalized_points
+from .utils_sys import Printer
+from .utils_geom import triangulate_normalized_points
 
 
 kVerbose=True     

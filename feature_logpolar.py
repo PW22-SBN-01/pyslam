@@ -40,7 +40,7 @@ from configs.defaults import _C as cfg
 #from modules.hardnet.models import HardNet  # given some matplotlib backend changes the code is repeated below
 
 
-from utils_features import extract_patches_tensor, extract_patches_array, extract_patches_array_cpp
+from .utils_features import extract_patches_tensor, extract_patches_array, extract_patches_array_cpp
 
 
 kVerbose = True 

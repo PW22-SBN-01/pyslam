@@ -27,8 +27,8 @@ from enum import Enum
 from scipy.spatial import cKDTree
 #from pykdtree.kdtree import KDTree # slower!
 
-from utils_sys import Printer, import_from, is_opencv_version_greater_equal
-from utils_geom import add_ones, s1_diff_deg, s1_dist_deg, l2_distances
+from .utils_sys import Printer, import_from, is_opencv_version_greater_equal
+from .utils_geom import add_ones, s1_diff_deg, s1_dist_deg, l2_distances
 
 ORBextractor = import_from('orbslam2_features', 'ORBextractor')  
       
@@ -39,7 +39,7 @@ except:
     kPySlamUtilsAvailable = False 
     Printer.orange('WARNING: cannot import pyslam_utils')
       
-from parameters import Parameters 
+from .parameters import Parameters 
 
 
 

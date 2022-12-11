@@ -18,8 +18,8 @@
 """
 
 import cv2
-from moving_average import MovingAverage
-from utils_sys import Printer
+from .moving_average import MovingAverage
+from .utils_sys import Printer
 
 #timer_print = print 
 timer_print = Printer.cyan 

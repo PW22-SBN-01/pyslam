@@ -25,11 +25,11 @@ import cv2
 from frame import Frame 
 from map_point import predict_detection_levels
 
-from utils_geom import skew, add_ones, normalize_vector, computeF12, check_dist_epipolar_line
-from utils_draw import draw_lines, draw_points 
-from utils_sys import Printer, getchar
-from parameters import Parameters  
-from timer import Timer
+from .utils_geom import skew, add_ones, normalize_vector, computeF12, check_dist_epipolar_line
+from .utils_draw import draw_lines, draw_points 
+from .utils_sys import Printer, getchar
+from .parameters import Parameters  
+from .timer import Timer
 from rotation_histogram import RotationHistogram
 
 

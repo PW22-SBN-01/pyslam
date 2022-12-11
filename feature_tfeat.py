@@ -37,7 +37,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 import torch.backends.cudnn as cudnn
 
-from utils_features import extract_patches_array, extract_patches_array_cpp
+from .utils_features import extract_patches_array, extract_patches_array_cpp
 
 
 kVerbose = True   

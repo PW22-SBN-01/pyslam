@@ -41,13 +41,13 @@ import scipy
 import scipy.io
 import scipy.misc
 
-from utils_sys import Printer
+from .utils_sys import Printer
 
 from lib.model_test import D2Net
 from lib.utils import preprocess_image
 from lib.pyramid import process_multiscale
 
-from utils_sys import Printer, is_opencv_version_greater_equal
+from .utils_sys import Printer, is_opencv_version_greater_equal
 
 kVerbose = True   
 

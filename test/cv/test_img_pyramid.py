@@ -5,9 +5,9 @@ import time
 import cv2
 import numpy as np
 
-from pyramid import Pyramid, PyramidType
+from .pyramid import Pyramid, PyramidType
 
-from utils_img import combine_images_horizontally
+from .utils_img import combine_images_horizontally
 
 
 img = cv2.imread('../data/kitti06-12.png',cv2.IMREAD_COLOR)

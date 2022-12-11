@@ -1,8 +1,8 @@
 import math 
 import numpy as np 
 
-from utils_features import descriptor_sigma_mad
-from parameters import Parameters 
+from .utils_features import descriptor_sigma_mad
+from .parameters import Parameters 
 from frame import Frame   
 
 # experimental 

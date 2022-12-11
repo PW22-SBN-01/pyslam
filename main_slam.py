@@ -39,16 +39,16 @@ if platform.system()  == 'Linux':
     from display2D import Display2D  #  !NOTE: pygame generate troubles under macOS!
 
 from viewer3D import Viewer3D
-from utils_sys import getchar, Printer 
+from .utils_sys import getchar, Printer 
 
-from feature_tracker import feature_tracker_factory, FeatureTrackerTypes 
-from feature_manager import feature_manager_factory
-from feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
-from feature_matcher import feature_matcher_factory, FeatureMatcherTypes
+from .feature_tracker import feature_tracker_factory, FeatureTrackerTypes 
+from .feature_manager import feature_manager_factory
+from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
+from .feature_matcher import feature_matcher_factory, FeatureMatcherTypes
 
 from feature_tracker_configs import FeatureTrackerConfigs
 
-from parameters import Parameters  
+from .parameters import Parameters  
 import multiprocessing as mp 
 
 

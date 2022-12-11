@@ -25,7 +25,7 @@ from multiprocessing import Process, Queue, Value
 import pangolin
 import OpenGL.GL as gl
 import numpy as np
-from utils_geom import inv_T 
+from .utils_geom import inv_T 
 
 
 kUiWidth = 180

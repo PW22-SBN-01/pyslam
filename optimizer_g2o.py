@@ -24,9 +24,9 @@ from threading import RLock
 
 import g2o
 
-from utils_geom import poseRt
+from .utils_geom import poseRt
 from frame import Frame
-from utils_sys import Printer
+from .utils_sys import Printer
 from map_point import MapPoint
 
 

@@ -17,12 +17,12 @@
 * along with PYSLAM. If not, see <http://www.gnu.org/licenses/>.
 """
 
-from feature_tracker import feature_tracker_factory, FeatureTrackerTypes 
-from feature_manager import feature_manager_factory
-from feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
-from feature_matcher import feature_matcher_factory, FeatureMatcherTypes
+from .feature_tracker import feature_tracker_factory, FeatureTrackerTypes 
+from .feature_manager import feature_manager_factory
+from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
+from .feature_matcher import feature_matcher_factory, FeatureMatcherTypes
 
-from parameters import Parameters  
+from .parameters import Parameters  
 
 
 # some default parameters 

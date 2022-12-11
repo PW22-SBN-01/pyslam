@@ -32,10 +32,10 @@ from dataset import dataset_factory
 #from mplot2d import Mplot2d
 from mplot_thread import Mplot2d, Mplot3d
 
-from feature_tracker import feature_tracker_factory, FeatureTrackerTypes 
-from feature_manager import feature_manager_factory
-from feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
-from feature_matcher import feature_matcher_factory, FeatureMatcherTypes
+from .feature_tracker import feature_tracker_factory, FeatureTrackerTypes 
+from .feature_manager import feature_manager_factory
+from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
+from .feature_matcher import feature_matcher_factory, FeatureMatcherTypes
 
 from feature_tracker_configs import FeatureTrackerConfigs
 

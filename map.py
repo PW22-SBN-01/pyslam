@@ -29,13 +29,13 @@ from ordered_set import OrderedSet # from https://pypi.org/project/ordered-set/
 
 from threading import RLock, Thread
 
-from utils_geom import poseRt, add_ones, add_ones_1D
-from parameters import Parameters 
+from .utils_geom import poseRt, add_ones, add_ones_1D
+from .parameters import Parameters 
 from frame import Frame
 from keyframe import KeyFrame
 from map_point import MapPoint
 
-from utils_sys import Printer
+from .utils_sys import Printer
 
 import g2o
 import optimizer_g2o 

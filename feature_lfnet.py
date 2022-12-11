@@ -59,10 +59,10 @@ from lfnet.utils import embed_breakpoint, print_opt
 from lfnet.common.argparse_utils import *
     
 from utils_tf import set_tf_logging
-from utils_img import img_from_floats
-from utils_sys import Printer, print_options
+from .utils_img import img_from_floats
+from .utils_sys import Printer, print_options
 
-from utils_sys import Printer, is_opencv_version_greater_equal
+from .utils_sys import Printer, is_opencv_version_greater_equal
 
 
 kLfNetBasePath = config.cfg.root_folder + '/thirdparty/lfnet'

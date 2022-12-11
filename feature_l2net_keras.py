@@ -31,9 +31,9 @@ import numpy as np
 
 from L2_Net import L2Net 
 
-from utils_sys import Printer 
+from .utils_sys import Printer 
 
-from utils_features import extract_patches_tensor, extract_patches_array, extract_patches_array_cpp
+from .utils_features import extract_patches_tensor, extract_patches_array, extract_patches_array_cpp
 
 
 kVerbose = True   

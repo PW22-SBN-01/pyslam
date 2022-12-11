@@ -24,8 +24,8 @@ from scipy.spatial import cKDTree
 
 from threading import RLock
 
-from parameters import Parameters  
-from utils_sys import Printer
+from .parameters import Parameters  
+from .utils_sys import Printer
 from collections import defaultdict, OrderedDict, Counter
 
 from frame import Frame 

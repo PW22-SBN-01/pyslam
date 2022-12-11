@@ -24,19 +24,19 @@ import cv2
 
 from collections import Counter
 
-from parameters import Parameters  
+from .parameters import Parameters  
 
-from feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
+from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
 
-from utils_sys import Printer, import_from
-from utils_features import unpackSiftOctaveKps, UnpackOctaveMethod, sat_num_features, kdt_nms, ssc_nms, octree_nms, grid_nms
-from utils_geom import hamming_distance, hamming_distances, l2_distance, l2_distances
+from .utils_sys import Printer, import_from
+from .utils_features import unpackSiftOctaveKps, UnpackOctaveMethod, sat_num_features, kdt_nms, ssc_nms, octree_nms, grid_nms
+from .utils_geom import hamming_distance, hamming_distances, l2_distance, l2_distances
 
-from feature_manager_adaptors import BlockAdaptor, PyramidAdaptor
-from pyramid import Pyramid, PyramidType
+from .feature_manager_adaptors import BlockAdaptor, PyramidAdaptor
+from .pyramid import Pyramid, PyramidType
 
-from feature_root_sift import RootSIFTFeature2D
-from feature_shitomasi import ShiTomasiDetector
+from .feature_root_sift import RootSIFTFeature2D
+from .feature_shitomasi import ShiTomasiDetector
     
 # import and check 
 SuperPointFeature2D = import_from('feature_superpoint', 'SuperPointFeature2D')         

@@ -27,7 +27,7 @@ from itertools import chain
 import cv2
 import g2o
 
-from parameters import Parameters  
+from .parameters import Parameters  
 
 from frame import Frame, match_frames
 from keyframe import KeyFrame
@@ -41,16 +41,16 @@ from local_mapping import LocalMapping
 from initializer import Initializer
 import optimizer_g2o
 
-from timer import TimerFps
+from .timer import TimerFps
 
 from slam_dynamic_config import SLAMDynamicConfig
 from motion_model import MotionModel, MotionModelDamping
 
-from feature_tracker import FeatureTrackerTypes 
+from .feature_tracker import FeatureTrackerTypes 
 
-from utils_sys import Printer, getchar, Logging
-from utils_draw import draw_feature_matches
-from utils_geom import triangulate_points, poseRt, normalize_vector, inv_T, triangulate_normalized_points, estimate_pose_ess_mat
+from .utils_sys import Printer, getchar, Logging
+from .utils_draw import draw_feature_matches
+from .utils_geom import triangulate_points, poseRt, normalize_vector, inv_T, triangulate_normalized_points, estimate_pose_ess_mat
 
 
 kVerbose = True     

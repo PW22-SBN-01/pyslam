@@ -5,7 +5,7 @@ import time
 import cv2
 import numpy as np
 
-from utils_img import pyramid 
+from .utils_img import pyramid 
 
 
 img = cv2.imread('../data/kitti06-12.png',cv2.IMREAD_COLOR)

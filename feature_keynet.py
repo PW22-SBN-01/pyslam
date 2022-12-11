@@ -41,7 +41,7 @@ import torch
 from threading import RLock
 
 from utils_tf import set_tf_logging
-from utils_sys import Printer, print_options
+from .utils_sys import Printer, print_options
 
 
 kVerbose = True   

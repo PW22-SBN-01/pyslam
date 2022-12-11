@@ -30,7 +30,7 @@ config.cfg.set_lib('unets')
 
 import cv2
 from threading import RLock
-from utils_sys import Printer 
+from .utils_sys import Printer 
 
 import torch, h5py, imageio, os, argparse
 import numpy as np
@@ -42,7 +42,7 @@ from torch_dimcheck import dimchecked
 
 from disk import DISK, Features
 
-from utils_sys import Printer, is_opencv_version_greater_equal
+from .utils_sys import Printer, is_opencv_version_greater_equal
 
 kVerbose = True     
 

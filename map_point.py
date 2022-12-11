@@ -22,11 +22,11 @@ import time
 import numpy as np
 from threading import RLock, Thread
 
-from utils_geom import poseRt, add_ones, normalize_vector, normalize_vector2
+from .utils_geom import poseRt, add_ones, normalize_vector, normalize_vector2
 from frame import Frame
-from utils_sys import Printer
+from .utils_sys import Printer
 
-from parameters import Parameters
+from .parameters import Parameters
 
 
 class MapPointBase(object):

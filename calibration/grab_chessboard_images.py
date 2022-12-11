@@ -6,7 +6,7 @@ from webcam import Webcam
 import sys
 sys.path.append("../")
 
-from timer import Timer
+from .timer import Timer
 
 # CHESSBOARD SIZE
 chessboard_size = (11,7)

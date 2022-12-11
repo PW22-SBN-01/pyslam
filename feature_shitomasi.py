@@ -22,7 +22,7 @@ import numpy as np
 import cv2
 
 
-from parameters import Parameters  
+from .parameters import Parameters  
 
 
 class ShiTomasiDetector(object): 

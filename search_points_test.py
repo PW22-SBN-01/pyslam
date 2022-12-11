@@ -23,11 +23,11 @@ import numpy as np
 import cv2 
 
 from frame import Frame 
-from utils_geom import skew, add_ones, normalize_vector, computeF12, check_dist_epipolar_line
-from utils_draw import draw_lines, draw_points 
-from utils_sys import Printer, getchar
-from parameters import Parameters  
-from timer import Timer
+from .utils_geom import skew, add_ones, normalize_vector, computeF12, check_dist_epipolar_line
+from .utils_draw import draw_lines, draw_points 
+from .utils_sys import Printer, getchar
+from .parameters import Parameters  
+from .timer import Timer
 
 
 # map an epipolar line to its end points, given an image with 'cols' columns, the epipole 'e' and the point xinf 

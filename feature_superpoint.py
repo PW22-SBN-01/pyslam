@@ -28,7 +28,7 @@ config.cfg.set_lib('superpoint')
 from demo_superpoint import SuperPointFrontend
 from threading import RLock
 
-from utils_sys import Printer, is_opencv_version_greater_equal
+from .utils_sys import Printer, is_opencv_version_greater_equal
 
 
 kVerbose = True   

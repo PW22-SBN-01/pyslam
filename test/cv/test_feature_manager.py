@@ -7,16 +7,16 @@ sys.path.append("../../")
 from config import Config
 
 from mplot_figure import MPlotFigure
-from feature_manager import feature_manager_factory
-from feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
-from utils_features import ssc_nms
+from .feature_manager import feature_manager_factory
+from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
+from .utils_features import ssc_nms
 
 from collections import defaultdict, Counter
 
 from feature_manager_configs import FeatureManagerConfigs
 from feature_tracker_configs import FeatureTrackerConfigs
 
-from timer import TimerFps
+from .timer import TimerFps
 
 
 # ==================================================================================================

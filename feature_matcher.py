@@ -18,7 +18,7 @@
 """
 import numpy as np 
 import cv2
-from parameters import Parameters  
+from .parameters import Parameters  
 from enum import Enum
 from collections import defaultdict
 

@@ -21,9 +21,9 @@ import numpy as np
 import cv2
 from enum import Enum
 
-from feature_tracker import FeatureTrackerTypes, FeatureTrackingResult
-from utils_geom import poseRt
-from timer import TimerFps
+from .feature_tracker import FeatureTrackerTypes, FeatureTrackingResult
+from .utils_geom import poseRt
+from .timer import TimerFps
 
 class VoStage(Enum):
     NO_IMAGES_YET   = 0     # no image received 

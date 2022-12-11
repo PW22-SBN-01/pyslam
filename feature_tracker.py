@@ -21,13 +21,13 @@ import numpy as np
 import cv2
 from enum import Enum
 
-from feature_manager import feature_manager_factory
-from feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
-from feature_matcher import feature_matcher_factory, FeatureMatcherTypes
+from .feature_manager import feature_manager_factory
+from .feature_types import FeatureDetectorTypes, FeatureDescriptorTypes, FeatureInfo
+from .feature_matcher import feature_matcher_factory, FeatureMatcherTypes
 
-from utils_sys import Printer, import_from
-from utils_geom import hamming_distance, hamming_distances, l2_distance, l2_distances
-from parameters import Parameters 
+from .utils_sys import Printer, import_from
+from .utils_geom import hamming_distance, hamming_distances, l2_distance, l2_distances
+from .parameters import Parameters 
 
 
 kMinNumFeatureDefault = 2000
